@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="stage1">
+        <div class="header">
+            <div class="title">
+                <p>ROCK</p>
+                <p>PAPER</p>
+                <p>SCISSORS</p>
+            </div>
+            <div class="score">
+                <div class="cscore box">
+                    <p>Computer</p>
+                    <p>Score</p>
+                    <div class="num num1">
+                        <p>0</p>
+                    </div>
+                </div>
+                <div class="yscore box">
+                    <p>Your</p>
+                    <p>Score</p>
+                    <div class="num num2">
+                        <p>0</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="gamestart">
+            <div class="tri">
+                <div><img class="img1" src="./assets/Line 1.png" id="line1" /></div>
+                <img class="item item1 value" src="./assets/Group 2.png" alt="">
+                <img class="item item2 value" src="./assets/Group 3.png" alt="">
+                <img class="item1 rock value" id="rock" src="./assets/rock.png" alt="rock">
+                <img class="item2 sci value" id="scissor" src="./assets/scissor.png" alt="scissor">
+                <div>
+
+                    <img class="img3" src="./assets/Line 3.png" id="line2" />
+                    <img class="img2" src="./assets/Line 2.png" id="line3" />
+                    <img class="item item3 value" src="./assets/Group 1.png" alt="">
+                    <img class="item3 paper value" id="paper" src="./assets/paper.png" alt="paper">
+                </div>
+            </div>
+            <div class="result-zone">
+                <div class="side">
+                    <div class="side-text">YOU PICKED</div>
+                    <div class="user-side-icon">
+                        <div class="side-icon" id="user-rock">
+                            <img src="./assets/rock.png" width="40%" height="35%"/>
+                        </div>
+                        <div class="side-icon" id="user-scissor">
+                            <img src="./assets//scissor.png" />
+                        </div>
+                        <div class="side-icon" id="user-paper">
+                            <img src="./assets/paper.png" width="40%" height="35%" />
+                        </div>
+                    </div>
+                </div>
+                <div class="result">
+                    <div class="result-text" id="win-text">YOU WON</div>
+                    <div class="result-text" id="lost-text">YOU LOST</div>
+                    <div class="result-text" id="tie-text">TIE UP</div>
+                    <div class="sub-text">AGAINST PC</div>
+                    <button class="playBtn">PLAY AGAIN</button>
+                    <button class="replayBtn">REPLAY</button>
+                </div>
+                <div class="side">
+                    <div class="side-text">PC PICKED</div>
+                    <div class="pc-side-icon">
+                        <div class="side-icon" id="pc-rock">
+                            <img src="./assets/rock.png" width="40%" height="35%"  />
+                        </div>
+                        <div class="side-icon" id="pc-scissor">
+                            <img src="./assets//scissor.png" width="40%" height="35%"/>
+                        </div>
+                        <div class="side-icon" id="pc-paper">
+                            <img src="./assets/paper.png" width="40%" height="35%"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </main>
+        </div>
+    </div>
+
+    <div class="stage2">
+        <div class="trophy">
+            <img src="./assets/Vector.png" alt="trophy image" />
+            <img src="./assets/Group 5.png" alt="stars" class="stars" />
+        </div>
+        <div class="hurrayMsg">HURRAY!!</div>
+        <div class="winMsg">YOU WON THE GAME</div>
+        <button class="winnerPlayBtn">PLAY AGAIN</button>
+    </div>
+
+
+    <button class="cross click ">
+        <img class="bg " src="./assets/redbg.png" alt="">
+        <img class="bg x " src="./assets/X.png" alt="">
+    </button>
+
+    <div class="popup click">
+        <h3>Game Rules</h3>
+        <ul>
+            <li>
+                <p>Rock beats scissors, scissors beat paper, and paper beats rock.</p>
+            </li>
+            <li>
+                <p>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper,
+                    scissors.”</p>
+            </li>
+            <li>
+                <p>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</p>
+            </li>
+            <li>
+                <p>If both players lay down the same hand, each player lays down another hand</p>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <button class="rules">
+            <p>RULES</p>
+        </button>
+        <button class="next">
+            <p>NEXT</p>
+        </button>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

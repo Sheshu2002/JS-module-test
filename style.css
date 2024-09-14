@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #8cc461;
+}
+.header {
+  border: 2px solid white;
+  width: 50%;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5%;
+  border-radius: 5px;
+  margin: 2% auto;
+}
+.title p {
+  font-family: Roboto;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: white;
+}
+.cscore {
+  color: #656565;
+  background-color: white;
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 700;
+}
+.yscore {
+  color: #656565;
+  background-color: white;
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 700;
+}
+.num {
+  font-size: 60px;
+}
+.score {
+  display: flex;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  height: 8rem;
+  margin: 5px;
+  align-items: center;
+  width: 5em;
+}
+
+.tri {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-top: 10%;
+}
+.img1 {
+  width: 15rem;
+  height: 1.5rem;
+}
+.img2,
+.img3 {
+  height: 10rem;
+  width: 8rem;
+}
+.item1 {
+  position: absolute;
+  left: 32%;
+  bottom: 36%;
+}
+.item2 {
+  position: absolute;
+  right: 32%;
+  bottom: 36%;
+}
+.item3 {
+  position: absolute;
+  right: 43.5%;
+  bottom: 5%;
+}
+
+.sci {
+  position: absolute;
+  right: 36.5%;
+  bottom: 45%;
+}
+.paper {
+  position: absolute;
+  right: 47%;
+  bottom: 12%;
+}
+.rock {
+  position: absolute;
+  left: 35.3%;
+  bottom: 45%;
+}
+.popup {
+  border: 7px solid white;
+  width: 20%;
+  height: 41%;
+  padding: 10px 23px;
+  background-color: #004429;
+  position: absolute;
+  right: 4%;
+  bottom: 13%;
+  border-radius: 13px;
+}
+
+.popup h3 {
+  font-family: Roboto;
+  font-size: 29px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  margin: 2px;
+}
+ul li p {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.23px;
+  text-align: left;
+  color: white;
+}
+ul li {
+  list-style-type: square;
+  color: yellow;
+}
+.bg {
+  position: absolute;
+  right: 2%;
+  bottom: 48%;
+  z-index: 1;
+}
+.x {
+  position: absolute;
+  right: 3.4%;
+  bottom: 50.3%;
+  object-fit: cover;
+}
+
+.result-zone {
+  height: 90%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 5px;
+  display: none;
+  
+}
+
+result {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+
+}
+
+.result-text {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+.sub-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+#lost-text,
+#tie-text,
+.replayBtn {
+  display: none;
+}
+
+.result > button {
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 5px;
+  height: 2rem;
+  color: gray;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  width: 70%;
+  cursor: pointer;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  align-content: space-between;
+  justify-content: center;
+  align-items: center;
+  width: 32%;
+}
+
+.side-text {
+  letter-spacing: 1.5px;
+  font-size: 1rem;
+  font-weight: 600;
+  z-index: 1;
+  margin-bottom: 2%;
+}
+
+#user-rock,
+#pc-rock {
+  background-image: url("./assets/Group\ 2.png");
+  
+}
+
+#user-scissor,
+#pc-scissor {
+  background-image: url("./assets/Group\ 3.png");
+  display: none;
+}
+
+#user-paper,
+#pc-paper {
+  background-image: url("./assets/Group\ 1.png");
+  display: none;
+}
+
+.green-background{
+  border: none;
+  box-shadow:
+  0 0 0 10px #1da82b inset, 
+  0 0 0 10px #1da82b, 
+  0 0 0 25px #1da82b90, 
+  0 0 0 40px #1da82b90;
+  border-radius: 50%;
+}
+
+.stage2 {
+  width: 100vw;
+  height: 100vh;
+  background: green;
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.trophy {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding-bottom: 2rem;
+  height: 55%;
+  position: relative;
+  width: 100%;
+}
+
+.stars {
+  position: absolute;
+}
+
+.hurrayMsg {
+  font-size: 5rem;
+  letter-spacing: 9px;
+  height: 15%;
+}
+
+.winMsg {
+  font-size: 2.5rem;
+  letter-spacing: 4px;
+  height: 10%;
+}
+
+.winnerPlayBtn {
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 5px;
+  height: 2.5rem;
+  color: gray;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  width: 12rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+
+
+footer > button {
+  border: 2px solid white;
+  background: transparent;
+  width: 7rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-left: 1rem;
+  cursor: pointer;
+  position: absolute;
+  right: 12%;
+  bottom: 2%;
+}
+
+.rules{
+  position: absolute;
+  right: 1.8%;
+}
+.next{
+  display: none;
+}
+.value:hover {
+  cursor: pointer;
+}
